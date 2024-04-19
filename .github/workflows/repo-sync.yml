@@ -12,9 +12,8 @@ jobs:
           persist-credentials: false
 
       - name: repo-sync
-        uses: repo-sync/github-sync@v2
+        uses: lhztop/sync-upstream-repo@master
         with:
-          source_repo: 'haotian-liu/LLaVA'
+          source_repo: 'lhztop/LLaVA lhztop/ComfyUI'
           source_branch: 'main'
-          destination_branch: 'main'
           github_token: ${{ secrets.PAT }}
